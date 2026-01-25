@@ -1,17 +1,54 @@
+# The Site Configuration
 theme: jekyll-theme-chirpy
+
 title: My Blog
 tagline: My personal thoughts and adventures
 description: >-
   A blog about my thoughts, adventures, and coding projects.
+
 url: "https://nestoredev.github.io"
 baseurl: "/my-blog"
+
 github:
   username: nestoredev
+
 social:
   name: John
   links:
     - https://github.com/nestoredev
-toc: true
+
+# Build settings
 paginate: 10
-# Disable HTML-Proofer to stop failing on external/missing link checks
-# (The Chirpy build process will still run, but this prevents the 'Test site' step failure)
+toc: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title/
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+# Chirpy options
+# This is crucial for fixing the "no styling" issue: 
+# Chirpy needs to know where its assets are.
+# By default it uses baseurl, but let's be explicit.
+img_cdn: ""
+avatar: "/assets/img/favicons/apple-touch-icon.png"
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
