@@ -28,6 +28,10 @@ jobs:
           ruby-version: 3.3
           bundle-cache: true
 
+      - name: Install Dependencies
+        run: |
+          bundle install
+
       - name: Build site
         run: |
           bundle exec jekyll build -d _site
