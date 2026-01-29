@@ -4,6 +4,20 @@ layout: default
 
 {% include lang.html %}
 
+<style>
+  #post-list img {
+    max-width: 800px !important;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+  }
+  .preview-img img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+</style>
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in site.posts %}
     {% unless post.hidden %}
