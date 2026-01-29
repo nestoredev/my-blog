@@ -37,6 +37,17 @@
 #post-list img, 
 .post-content img {
   height: auto !important;
+  max-height: none !important;
+  width: auto !important;
   max-width: 100% !important;
-  object-fit: contain !important;
+  object-fit: initial !important;
+  border-radius: 8px; /* Maintain your nice rounded look */
+}
+
+/* Remove any container height restrictions on the home page */
+#post-list .card-wrapper,
+#post-list .card,
+#post-list .card-body {
+  height: auto !important;
+  max-height: none !important;
 }
