@@ -84,11 +84,22 @@
   height: auto !important;
   max-height: none !important;
   width: auto !important;
-  max-width: 100% !important;
+  max-width: 450px !important;
   object-fit: initial !important;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Ensure mobile responsiveness - images scale down if screen is < 450px */
+@media (max-width: 450px) {
+  #post-list img, 
+  .post-content img {
+    max-width: 100% !important;
+  }
 }
 
 /* 4. Special handling for your custom captions */
