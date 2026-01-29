@@ -52,7 +52,24 @@
   -webkit-box-orient: unset !important;
 }
 
-/* 2. Fix images everywhere (home and inside posts) */
+/* 2. KILL THE PREVIEW IMAGE CONSTRAINT */
+/* Chirpy forces a 40/21 ratio (1.91:1) which crops tall photos. We kill it. */
+.preview-img, 
+#post-list .preview-img {
+  aspect-ratio: auto !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.preview-img img,
+#post-list .preview-img img {
+  height: auto !important;
+  max-height: none !important;
+  object-fit: initial !important;
+}
+
+/* 3. Fix images everywhere (home and inside posts) */
 #post-list img, 
 .post-content img {
   display: block !important;
@@ -66,7 +83,7 @@
   margin-right: auto;
 }
 
-/* 3. Special handling for your custom captions */
+/* 4. Special handling for your custom captions */
 #post-list em,
 .post-content em {
   display: block !important;
