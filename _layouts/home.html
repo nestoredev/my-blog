@@ -38,6 +38,11 @@ layout: default
           </div>
 
           <div class="card-text content">
+            {% if post.image.path %}
+              <div class="preview-img mb-3">
+                <img src="{{ post.image.path }}" alt="{{ post.title }}" class="img-fluid rounded">
+              </div>
+            {% endif %}
             {{ post.content }}
           </div>
         </div>
