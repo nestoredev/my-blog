@@ -6,14 +6,15 @@ layout: default
 
 <style>
   #post-list img {
-    max-width: 800px !important;
+    width: 100%;
+    max-width: 600px !important;
     height: auto;
     display: block;
     margin: 0 auto 1.5rem;
     border-radius: 8px;
   }
   .preview-img img {
-    max-height: 400px;
+    max-height: 350px;
     object-fit: cover;
   }
 </style>
@@ -54,7 +55,7 @@ layout: default
           <div class="card-text content">
             {% if post.image.path %}
               <div class="preview-img mb-3">
-                <img src="{{ post.image.path | replace: '/upload/', '/upload/c_limit,w_800/' }}" alt="{{ post.title }}" class="img-fluid rounded" style="max-height: 400px; width: auto; margin: 0 auto; display: block;">
+                <img src="{{ post.image.path | replace: '/upload/', '/upload/c_limit,w_600/' }}" alt="{{ post.title }}" class="img-fluid rounded">
               </div>
             {% endif %}
             {{ post.content }}
