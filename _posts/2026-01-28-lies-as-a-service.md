@@ -1,6 +1,6 @@
 ---
 title: "Lies as a service"
-date: 2026-01-28 19:08:00 -0500
+date: 2026-01-28 12:00:00 -0500
 categories: [Blog]
 ---
 
