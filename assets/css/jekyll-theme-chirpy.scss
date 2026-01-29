@@ -60,6 +60,14 @@
   height: auto !important;
   max-height: none !important;
   overflow: visible !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.preview-img::before,
+.preview-img::after {
+  display: none !important;
 }
 
 .preview-img img,

@@ -58,9 +58,7 @@ layout: default
 
           <div class="card-text content">
             {% if post.image.path %}
-              <div class="preview-img">
-                <img src="{{ post.image.path | replace: '/upload/', '/upload/c_limit,w_450/' }}" alt="{{ post.title }}" class="rounded">
-              </div>
+              <img src="{{ post.image.path | replace: '/upload/', '/upload/c_limit,w_450/' }}" alt="{{ post.title }}" class="rounded mb-3" style="max-width: 450px !important; width: auto; margin: 0 auto; display: block;">
             {% endif %}
             {{ post.content }}
           </div>
