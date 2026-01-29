@@ -40,7 +40,7 @@ layout: default
           <div class="card-text content">
             {% if post.image.path %}
               <div class="preview-img mb-3">
-                <img src="{{ post.image.path }}" alt="{{ post.title }}" class="img-fluid rounded">
+                <img src="{{ post.image.path | replace: '/upload/', '/upload/c_limit,w_800/' }}" alt="{{ post.title }}" class="img-fluid rounded" style="max-height: 400px; width: auto; margin: 0 auto; display: block;">
               </div>
             {% endif %}
             {{ post.content }}
