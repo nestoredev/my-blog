@@ -5,5 +5,5 @@ categories: [Thoughts]
 ---
 
 
-![Image](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_600/v1769730460/blog-posts/fifytrozdfw6mrpixybc.jpg)
+![Image](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_450/v1769730460/blog-posts/fifytrozdfw6mrpixybc.jpg)
 *TARS*

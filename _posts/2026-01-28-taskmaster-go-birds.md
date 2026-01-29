@@ -5,5 +5,5 @@ categories: [Thoughts]
 ---
 
 
-![Image](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_600/v1769650684/blog-posts/vs6ikxfsgkfvcatneqdx.jpg)
+![Image](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_450/v1769650684/blog-posts/vs6ikxfsgkfvcatneqdx.jpg)
 *The Taskmaster in Eagles gear*

@@ -5,5 +5,5 @@ categories: [Thoughts]
 ---
 
 
-![Image](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_600/v1769650405/blog-posts/jhmdztoik7ozorah38wr.jpg)
+![Image](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_450/v1769650405/blog-posts/jhmdztoik7ozorah38wr.jpg)
 _Snow measuring in Philly _
