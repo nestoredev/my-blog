@@ -4,20 +4,6 @@ layout: default
 
 {% include lang.html %}
 
-<style>
-  /* Force full post content visibility on home page */
-  #post-list .card-text.content,
-  #post-list .card-text.content p,
-  #post-list .card-text.content div {
-    display: block !important;
-    -webkit-line-clamp: unset !important;
-    -webkit-box-orient: unset !important;
-    overflow: visible !important;
-    max-height: none !important;
-    text-overflow: unset !important;
-  }
-</style>
-
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in site.posts %}
     {% unless post.hidden %}

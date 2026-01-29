@@ -33,21 +33,46 @@
   }
 }
 
-/* Ensure blog images maintain aspect ratio and don't get cut off */
+/* ==========================================================================
+   PHOTO ESSAY & ASPECT RATIO FIXES
+   ========================================================================== */
+
+/* 1. Unlock all container heights on the home page */
+#post-list .card-wrapper,
+#post-list .card,
+#post-list .card-body,
+#post-list .content,
+#post-list .card-text,
+#post-list p {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: unset !important;
+}
+
+/* 2. Fix images everywhere (home and inside posts) */
 #post-list img, 
 .post-content img {
+  display: block !important;
   height: auto !important;
   max-height: none !important;
   width: auto !important;
   max-width: 100% !important;
   object-fit: initial !important;
-  border-radius: 8px; /* Maintain your nice rounded look */
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Remove any container height restrictions on the home page */
-#post-list .card-wrapper,
-#post-list .card,
-#post-list .card-body {
-  height: auto !important;
-  max-height: none !important;
+/* 3. Special handling for your custom captions */
+#post-list em,
+.post-content em {
+  display: block !important;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: var(--text-muted-color);
 }
