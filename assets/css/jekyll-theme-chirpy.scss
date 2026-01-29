@@ -32,3 +32,11 @@
     opacity: 0;
   }
 }
+
+/* Ensure blog images maintain aspect ratio and don't get cut off */
+#post-list img, 
+.post-content img {
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+}
