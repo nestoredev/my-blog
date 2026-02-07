@@ -7,3 +7,5 @@ categories: [Blog]
 ![](https://res.cloudinary.com/dxzgl1kxh/image/upload/c_limit,w_450/v1770426649/gfhwbetuliimq20ifbjq.jpg)
 
 _Live Stream_
+
+Can’t wait for the strem this year. Should be great.
